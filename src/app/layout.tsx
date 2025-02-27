@@ -9,6 +9,7 @@ const outfit = Outfit({
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin", "latin-ext"],
 });
 
 export const metadata: Metadata = {

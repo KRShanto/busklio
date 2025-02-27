@@ -1,9 +1,9 @@
 "use client";
 
-import { ShoppingBasketIcon as Basketball } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import GradientButton from "../ui/gradient-button";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -11,7 +11,13 @@ export default function Header() {
       <div className="mx-8 md:mx-12 lg:mx-16">
         <nav className="flex items-center justify-between px-6 py-3 rounded-full backdrop-blur-md bg-transparent border border-white/20">
           <Link href="/" className="flex items-center gap-2">
-            <Basketball className="w-6 h-6 text-blue-500" />
+            <Image
+              src="/logo.png"
+              alt="BuskLio"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
             <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
               BuskLio
             </span>
